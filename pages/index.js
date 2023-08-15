@@ -4,10 +4,11 @@ import React, { useState } from "react";
 export default function Home() {
   const [prompt, setPrompt] = useState("");
   const [affirmation, setAffirmation] = useState("");
-  const [loading, setLoading] = useState(false); 
+  const [loading, setLoading] = useState(false);
 
   const handlePromptClick = (selectedPrompt) => {
     setPrompt(selectedPrompt);
+    setLoading(true);
     generateAffirmation(selectedPrompt);
   };
 
@@ -29,8 +30,9 @@ export default function Home() {
           new Error(`Request failed with status ${response.status}`)
         );
       }
-
       setAffirmation(data.affirmation);
+      setLoading(false);
+
     } catch (error) {
       // Consider implementing your own error handling logic here
       console.error(error);
