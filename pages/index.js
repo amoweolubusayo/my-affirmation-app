@@ -34,9 +34,7 @@ export default function Home() {
       setLoading(false);
 
     } catch (error) {
-      // Consider implementing your own error handling logic here
       console.error(error);
-      alert(error.message);
     }
   };
 
@@ -120,64 +118,5 @@ export default function Home() {
         </div>
       </main>
     </div>
-    // <div>
-    //   <Head>
-    //     <title>My make me feel better Chat buddy</title>
-    //     <link rel="icon" href="/chatbot.png" />
-    //   </Head>
-
-    //   <main className={styles.main}>
-    //     <h1>Words of Affirmation Chatbot</h1>
-    //     <div className={styles.chatContainer}>
-    //       <div className={styles.chatBot}>
-    //         <div className={styles.chatMessage}>
-    //           <p className={styles.botText}>
-    //             Hi there! You built me to help you feel better
-    //           </p>
-    //           <p className={styles.botText}>Please select a prompt:</p>
-    //         </div>
-    //         <div className={styles.promptButtons}>
-    //           <button
-    //             className={styles.promptButton}
-    //             onClick={() => handlePromptClick("Word of encouragment if a lady has mood swings")}
-    //           >
-    //             I am sad
-    //           </button>
-    //           <button
-    //             className={styles.promptButton}
-    //             onClick={() => handlePromptClick("Word of affirmation because of weight gain")}
-    //           >
-    //             Someone called me fat today
-    //           </button>
-    //           <button
-    //             className={styles.promptButton}
-    //             onClick={() => handlePromptClick("Word of affirmation to not me hard on myself if i cannot make it to the gym")}
-    //           >
-    //             I was told to hit the gym
-    //           </button>
-    //           <button
-    //             className={styles.promptButton}
-    //             onClick={() => handlePromptClick("Say something to brighten up my spirit and make me happy")}
-    //           >
-    //             I am not happy
-    //           </button>
-    //           <button
-    //             className={styles.promptButton}
-    //             onClick={() =>
-    //               handlePromptClick("Say something to make me not sad even though I haven't seen my menstrual cycle when due")
-    //             }
-    //           >
-    //             I have not seen my period this month
-    //           </button>
-    //         </div>
-    //         {affirmation && (
-    //           <div className={styles.chatMessage}>
-    //             <p className={styles.botGeneratedText}>{affirmation}</p>
-    //           </div>
-    //         )}
-    //       </div>
-    //     </div>
-    //   </main>
-    // </div>
   );
 }
