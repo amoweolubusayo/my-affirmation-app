@@ -9,7 +9,7 @@ const openai = new OpenAIApi(configuration);
 export default async function handler(req, res) {
   const imput = req.body.imput || "";
   try {
-    const response = await openai.createChatCompletion({
+    const response = await openai.chat.completions.create({
       model: "gpt-3.5-turbo",
       temperature: 0.6,
       messages: [{ role: "user", content: generateAffirmation(imput) }],
