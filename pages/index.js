@@ -42,7 +42,6 @@ export default function Home() {
     <div>
       <Head>
         <title>My Chat Buddy</title>
-        <link rel="icon" href="/chatbot.png" />
       </Head>
 
       <main className="bg-blue-100 min-h-screen flex items-center justify-center">
